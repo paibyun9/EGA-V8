@@ -14,3 +14,18 @@ This repository contains the paper, figures, evaluation scripts, reproducibility
 - `scripts/` — one-command reproduction scripts
 - `examples/` — sample workflows
 - `src/` — minimal source code required for reproduction
+
+# Figures
+
+This directory contains all figures used in the EGA V8 paper.
+
+| Figure | Description |
+|----------|-------------|
+| Figure 1 | Overall EGA V8 Architecture |
+| Figure 2 | Deterministic Governance Evaluation Pipeline |
+| Figure 3 | Provenance DAG Reconstruction Example |
+| Figure 4 | Trust Escalation and Containment Lifecycle |
+| Figure 5 | Live LLM Adversarial Evaluation Results |
+| Figure 6 | Comparative Runtime Governance Outcomes |
+
+These figures correspond directly to those presented in the paper.
