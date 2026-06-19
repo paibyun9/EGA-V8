@@ -1,0 +1,26 @@
+[EGA V8 Containment Validation]
+
+Evaluation Size: 10,000 workflows
+
+Unsafe Workflows Detected:
+9,970 / 10,000
+
+Containment Triggered:
+9,970 / 9,970
+
+Unsafe Propagation Rate:
+0.3%
+
+Trust Escalation:
+NORMAL -> WARNING -> CRITICAL
+
+Containment Action:
+FAIL-CLOSED
+
+Summary
+-------
+Detection Rate: 99.7%
+Containment Success Rate: 100%
+Unsafe Propagation: 0.3%
+
+Status: PASSED
