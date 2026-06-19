@@ -22,28 +22,9 @@ src/
 ├── provenance_graph.js
 └── containment_guard.js
 
-Source Code
+---
 
-Minimal reproducibility source code accompanying the EGA V8 artifact package.
-
-Overview
-
-This directory contains lightweight reference implementations demonstrating the three core governance mechanisms presented in the paper.
-
-Core mechanisms:
-
-- Deterministic Replay
-- Provenance Reconstruction
-- Governance-Aware Containment
-
-File Structure
-
-src/
-  replay_root.js
-  provenance_graph.js
-  containment_guard.js
-
-Components
+## Components
 
 replay_root.js
 
