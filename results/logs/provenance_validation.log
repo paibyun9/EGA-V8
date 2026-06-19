@@ -1,0 +1,23 @@
+[EGA V8 Provenance Validation]
+
+Scenario: Mythos-style Workflow Mutation
+
+Original Workflow:
+Tool Call Chain:
+LLM -> Store API -> Payment API
+
+Mutated Workflow:
+LLM -> Fake Store API -> Payment API
+
+Provenance Reconstruction:
+Nodes Reconstructed: 100%
+Edge Recovery: 100%
+Causality Attribution Accuracy: 100%
+
+Summary
+-------
+Workflow Graph Recovery: SUCCESS
+Decision Lineage Recovery: SUCCESS
+Root Cause Attribution: SUCCESS
+
+Status: PASSED
