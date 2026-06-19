@@ -1,0 +1,42 @@
+{
+  "workflow_id": "ATTACK-001",
+  "workflow_type": "purchase",
+
+  "user": {
+    "user_id": "attacker"
+  },
+
+  "input": {
+    "item": "gaming_laptop",
+    "quantity": 100,
+    "price": 2000
+  },
+
+  "policy": {
+    "policy_id": "purchase_policy_v1",
+    "max_amount": 5000
+  },
+
+  "tool_calls": [
+    {
+      "tool": "inventory_api",
+      "action": "check_stock"
+    },
+    {
+      "tool": "payment_api",
+      "action": "charge"
+    }
+  ],
+
+  "attack": {
+    "type": "quantity_mutation",
+    "modified_field": "quantity",
+    "new_value": 100
+  },
+
+  "expected_result": {
+    "decision": "BLOCK",
+    "trust_state": "T4",
+    "containment": true
+  }
+}
