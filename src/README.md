@@ -24,7 +24,7 @@ src/
 
 ---
 
-## Components
+Components
 
 replay_root.js
 
