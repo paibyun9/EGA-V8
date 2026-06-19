@@ -1,0 +1,36 @@
+{
+  "workflow_id": "WF-001",
+  "workflow_type": "purchase",
+
+  "user": {
+    "user_id": "user-001"
+  },
+
+  "input": {
+    "item": "laptop",
+    "quantity": 1,
+    "price": 1200
+  },
+
+  "policy": {
+    "policy_id": "purchase_policy_v1",
+    "max_amount": 5000
+  },
+
+  "tool_calls": [
+    {
+      "tool": "inventory_api",
+      "action": "check_stock"
+    },
+    {
+      "tool": "payment_api",
+      "action": "charge"
+    }
+  ],
+
+  "expected_result": {
+    "decision": "ALLOW",
+    "trust_state": "T1",
+    "containment": false
+  }
+}
