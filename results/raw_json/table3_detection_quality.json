@@ -1,0 +1,50 @@
+{
+  "title": "Table 3. Detection Quality Evaluation Results",
+  "columns": [
+    "Metric",
+    "Value"
+  ],
+  "rows": [
+    {
+      "Metric": "Total Workflows",
+      "Value": 1000
+    },
+    {
+      "Metric": "True Positive (TP)",
+      "Value": 500
+    },
+    {
+      "Metric": "True Negative (TN)",
+      "Value": 500
+    },
+    {
+      "Metric": "False Positive (FP)",
+      "Value": 0
+    },
+    {
+      "Metric": "False Negative (FN)",
+      "Value": 0
+    },
+    {
+      "Metric": "Precision",
+      "Value": "100%"
+    },
+    {
+      "Metric": "Recall",
+      "Value": "100%"
+    },
+    {
+      "Metric": "F1 Score",
+      "Value": "100%"
+    },
+    {
+      "Metric": "False Positive Rate (FPR)",
+      "Value": "0%"
+    },
+    {
+      "Metric": "False Negative Rate (FNR)",
+      "Value": "0%"
+    }
+  ],
+  "note": "Detection quality was evaluated using a balanced dataset consisting of 500 normal workflows and 500 adversarial workflows."
+}

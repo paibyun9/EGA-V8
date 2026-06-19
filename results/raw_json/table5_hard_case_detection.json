@@ -1,0 +1,70 @@
+{
+  "title": "Table 5. Hard-Case Detection Evaluation Results",
+  "columns": [
+    "Dataset Component / Metric",
+    "Value"
+  ],
+  "rows": [
+    {
+      "Dataset Component / Metric": "Evaluation Scale",
+      "Value": ""
+    },
+    {
+      "Dataset Component / Metric": "Total Hard-Case Workflows",
+      "Value": 1000
+    },
+    {
+      "Dataset Component / Metric": "Target Positive (Adversarial)",
+      "Value": 500
+    },
+    {
+      "Dataset Component / Metric": "Target Negative (Legitimate)",
+      "Value": 500
+    },
+    {
+      "Dataset Component / Metric": "Confusion Matrix Outcomes",
+      "Value": ""
+    },
+    {
+      "Dataset Component / Metric": "True Positive (TP)",
+      "Value": 500
+    },
+    {
+      "Dataset Component / Metric": "True Negative (TN)",
+      "Value": 500
+    },
+    {
+      "Dataset Component / Metric": "False Positive (FP)",
+      "Value": 0
+    },
+    {
+      "Dataset Component / Metric": "False Negative (FN)",
+      "Value": 0
+    },
+    {
+      "Dataset Component / Metric": "Detection Quality Metrics",
+      "Value": ""
+    },
+    {
+      "Dataset Component / Metric": "Precision",
+      "Value": "100%"
+    },
+    {
+      "Dataset Component / Metric": "Recall",
+      "Value": "100%"
+    },
+    {
+      "Dataset Component / Metric": "F1 Score",
+      "Value": "100%"
+    },
+    {
+      "Dataset Component / Metric": "False Positive Rate (FPR)",
+      "Value": "0%"
+    },
+    {
+      "Dataset Component / Metric": "False Negative Rate (FNR)",
+      "Value": "0%"
+    }
+  ],
+  "note": "Hard-case detection quality was evaluated using adversarial workflows designed to closely resemble legitimate execution behavior."
+}

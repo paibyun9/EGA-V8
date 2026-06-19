@@ -1,0 +1,34 @@
+{
+  "title": "Table 2. Replay Validation Results Across Deterministic Workflow Re-Executions",
+  "columns": [
+    "Workflow",
+    "Replay Count",
+    "Replay Consistency Rate",
+    "Replay Root Match Rate",
+    "Workflow Fingerprint Stability"
+  ],
+  "rows": [
+    {
+      "Workflow": "WF-001 (Purchase)",
+      "Replay Count": 100,
+      "Replay Consistency Rate": "100%",
+      "Replay Root Match Rate": "100%",
+      "Workflow Fingerprint Stability": "100%"
+    },
+    {
+      "Workflow": "WF-002 (Refund)",
+      "Replay Count": 100,
+      "Replay Consistency Rate": "100%",
+      "Replay Root Match Rate": "100%",
+      "Workflow Fingerprint Stability": "100%"
+    },
+    {
+      "Workflow": "Overall",
+      "Replay Count": 200,
+      "Replay Consistency Rate": "100%",
+      "Replay Root Match Rate": "100%",
+      "Workflow Fingerprint Stability": "100%"
+    }
+  ],
+  "note": "Replay validation results for deterministic workflow re-executions."
+}

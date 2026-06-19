@@ -1,0 +1,38 @@
+{
+  "title": "Table 4. Large-Scale Detection Evaluation Results",
+  "columns": [
+    "Workflow Scale",
+    "Precision",
+    "Recall",
+    "F1 Score",
+    "FPR",
+    "FNR"
+  ],
+  "rows": [
+    {
+      "Workflow Scale": 100,
+      "Precision": "100%",
+      "Recall": "100%",
+      "F1 Score": "100%",
+      "FPR": "0%",
+      "FNR": "0%"
+    },
+    {
+      "Workflow Scale": 1000,
+      "Precision": "100%",
+      "Recall": "100%",
+      "F1 Score": "100%",
+      "FPR": "0%",
+      "FNR": "0%"
+    },
+    {
+      "Workflow Scale": 10000,
+      "Precision": "100%",
+      "Recall": "100%",
+      "F1 Score": "100%",
+      "FPR": "0%",
+      "FNR": "0%"
+    }
+  ],
+  "note": "Large-scale detection quality was evaluated at workflow scales of 100, 1,000, and 10,000."
+}
