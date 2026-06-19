@@ -1,0 +1,22 @@
+[EGA V8 Replay Validation]
+
+Workflow: WF-001 (Purchase)
+Replay Count: 100
+Replay Consistency Rate: 100%
+Replay Root Match Rate: 100%
+Workflow Fingerprint Stability: 100%
+
+Workflow: WF-002 (Refund)
+Replay Count: 100
+Replay Consistency Rate: 100%
+Replay Root Match Rate: 100%
+Workflow Fingerprint Stability: 100%
+
+Summary
+-------
+Total Replays: 200
+Replay Consistency: 100%
+Replay Root Integrity: 100%
+Fingerprint Stability: 100%
+
+Status: PASSED
