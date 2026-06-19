@@ -29,3 +29,46 @@ This directory contains all figures used in the EGA V8 paper.
 | Figure 6 | Comparative Runtime Governance Outcomes |
 
 These figures correspond directly to those presented in the paper.
+
+# Results Directory
+
+This directory contains all evaluation outputs, logs, and machine-readable artifacts used in the EGA V8 experimental validation.
+
+---
+
+## Structure
+
+```text
+results/
+├── logs/
+│   ├── replay_validation.log
+│   ├── provenance_validation.log
+│   └── containment_validation.log
+│
+├── raw_json/
+│   ├── table2_replay_validation.json
+│   ├── table3_detection_quality.json
+│   ├── table4_large_scale_detection.json
+│   └── table5_hard_case_detection.json
+│
+└── tables/
+    ├── table2_replay_validation.csv
+    ├── table3_detection_quality.csv
+    ├── table4_large_scale_detection.csv
+    └── table5_hard_case_detection.csv
+
+## Overview
+
+This directory contains all experimental outputs reported in the EGA V8 paper.
+
+Artifacts are provided in three formats:
+
+- Human-readable logs
+- Machine-readable JSON files
+- CSV tables corresponding to the manuscript
+
+Large-scale detection experiment results.
+
+table5_hard_case_detection.csv
+
+Hard-case and adversarial workflow evaluation results.
