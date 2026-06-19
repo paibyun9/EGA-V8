@@ -1,0 +1,16 @@
+Dataset Component / Metric,Value
+Evaluation Scale,
+Total Hard-Case Workflows,1000
+Target Positive (Adversarial),500
+Target Negative (Legitimate),500
+Confusion Matrix Outcomes,
+True Positive (TP),500
+True Negative (TN),500
+False Positive (FP),0
+False Negative (FN),0
+Detection Quality Metrics,
+Precision,100%
+Recall,100%
+F1 Score,100%
+False Positive Rate (FPR),0%
+False Negative Rate (FNR),0%

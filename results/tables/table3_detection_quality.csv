@@ -1,0 +1,11 @@
+Metric,Value
+Total Workflows,1000
+True Positive (TP),500
+True Negative (TN),500
+False Positive (FP),0
+False Negative (FN),0
+Precision,100%
+Recall,100%
+F1 Score,100%
+False Positive Rate (FPR),0%
+False Negative Rate (FNR),0%
