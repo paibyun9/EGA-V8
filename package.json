@@ -1,0 +1,26 @@
+{
+  "name": "ega-v8",
+  "version": "0.1.0",
+  "description": "Execution Governance AI V8: replay, provenance, and containment for autonomous AI workflows.",
+  "main": "index.js",
+  "bin": {
+    "ega-v8": "./bin/ega-v8.js"
+  },
+  "type": "commonjs",
+  "license": "MIT",
+  "keywords": [
+    "ai-agents",
+    "execution-governance",
+    "replay",
+    "provenance",
+    "containment",
+    "agent-safety"
+  ],
+  "files": [
+    "bin",
+    "src",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ]
+}
