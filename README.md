@@ -57,9 +57,11 @@ Real-time unsafe workflow containment preventing irreversible external actions.
 The following commands allow you to independently reproduce and verify the three baseline governance capabilities evaluated in the EGA V8 research paper.
 1. Replay Validation
 Verify deterministic replay consistency. The framework guarantees that an unmutated workflow will always generate an identical cryptographic replay root.
+
 Bash
 npx ega-v8 replay examples/normal_workflow.json
 Expected Output:
+
 JSON
 {
   "replay_root": "8f2db676556ca72433ec1aaf0296f323de1308d47d9c95a5d78016f6574b7894"
@@ -84,9 +86,11 @@ JSON
 What This Demonstrates: Execution traceability, causal dependency reconstruction, and explicit governance visibility.
 3. Containment Validation
 Simulate an adversarial workflow mutation (e.g., Mythos-like execution-mutation attack) to verify runtime block performance.
+
 Bash
 npx ega-v8 contain examples/mythos_like_attack.json
 Expected Output:
+
 JSON
 {
   "workflow_id": "ATTACK-001",
