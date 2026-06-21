@@ -40,3 +40,15 @@ Replay Mismatch Detected
 Containment Activated
 Execution Blocked
 Result: SAFE
+
+```md
+## Replay Validation
+
+```bash
+npx ega-v8 replay examples/normal_workflow.json
+Provenance Reconstruction
+npx ega-v8 provenance examples/normal_workflow.json
+Containment Validation
+npx ega-v8 contain examples/mythos_like_attack.json
+
+---
