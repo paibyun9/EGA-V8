@@ -176,7 +176,7 @@ EGA-V8/
   year={2026}
 }
 
-## Collaboration & Feedback
+## 📌 Collaboration & Feedback ##
 
 EGA V8 is released as an open artifact accompanying the EGA V8 research paper.
 
