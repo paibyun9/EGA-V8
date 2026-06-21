@@ -62,9 +62,7 @@ Workflow fingerprint stability
 
 ---
 
-# Provenance Reconstruction
-
-```markdown
+```
 ## Provenance Reconstruction
 
 Reconstruct workflow lineage and execution dependencies.
@@ -87,14 +85,14 @@ Governance visibility
 
 # Containment Validation
 
-```markdown
+```
 ## Containment Validation
 
 Detect workflow mutation and activate containment.
 
 ### Run
 
-```bash
+```
 npx ega-v8 contain examples/mythos_like_attack.json
 Expected Output
 {
