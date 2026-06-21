@@ -64,6 +64,7 @@ Verify deterministic replay consistency. The framework guarantees that an unmuta
 
 Bash
 npx ega-v8 replay examples/normal_workflow.json
+
 Expected Output:
 
 JSON
