@@ -71,11 +71,15 @@ JSON
 {
   "replay_root": "8f2db676556ca72433ec1aaf0296f323de1308d47d9c95a5d78016f6574b7894"
 }
+
 What This Demonstrates: Deterministic execution stability and workflow fingerprint reproducibility.
+
 2. Provenance Reconstruction
 Reconstruct runtime workflow lineage and tool-call dependencies into a structured, auditable causal graph.
+
 Bash
 npx ega-v8 provenance examples/normal_workflow.json
+
 Expected Output:
 JSON
 {
@@ -89,11 +93,13 @@ JSON
 }
 
 What This Demonstrates: Execution traceability, causal dependency reconstruction, and explicit governance visibility.
+
 3. Containment Validation
 Simulate an adversarial workflow mutation (e.g., Mythos-like execution-mutation attack) to verify runtime block performance.
 
 Bash
 npx ega-v8 contain examples/mythos_like_attack.json
+
 Expected Output:
 
 JSON
@@ -139,7 +145,9 @@ Table 3	Detection Quality Results	100% Precision / Recall
 Table 4	Large-Scale Detection Results	Flawless up to 10 
 4
   Workflows
+
 Table 5	Hard-Case Detection Results	0% False Positives / Negatives
+
 Result Files Directory
 Plaintext
 results/
