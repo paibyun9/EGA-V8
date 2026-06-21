@@ -1,4 +1,3 @@
-Markdown
 # EGA-V8 (Execution Governance AI V8)
 > **A Five-Layer Execution Governance Architecture for Provable Autonomous AI Execution**
 
@@ -31,6 +30,7 @@ Run Without Installation
 You can spin up the interactive demonstration instantly using npx:
 Bash
 npx ega-v8 demo
+
 🚀 Quick Demo
 Experience the core difference between a standard un-governed runtime and the EGA v8 protected framework.
 Bash
@@ -47,10 +47,12 @@ Diff
   Containment Activated
   Execution Blocked
 + Result: SAFE
+
 What This Demonstrates:
 Seamless replay mismatch detection during live execution.
 Automatic governance activation and risk-adaptive trust escalation.
 Real-time unsafe workflow containment preventing irreversible external actions.
+
 🔬 Core Governance Demonstrations
 The following commands allow you to independently reproduce and verify the three baseline governance capabilities evaluated in the EGA V8 research paper.
 1. Replay Validation
@@ -78,6 +80,7 @@ JSON
     { "from": "workflow", "to": "input" }
   ]
 }
+
 What This Demonstrates: Execution traceability, causal dependency reconstruction, and explicit governance visibility.
 3. Containment Validation
 Simulate an adversarial workflow mutation (e.g., Mythos-like execution-mutation attack) to verify runtime block performance.
@@ -115,7 +118,9 @@ JSON
   "reason": "policy_violation",
   "audit_log": "results/logs/replay_validation.log"
 }
+
 What This Demonstrates: Complete cryptographic replay mismatch profiling, provenance failure mapping, and granular audit trace generation.
+
 📊 Experimental Results & Benchmarks
 This repository includes the complete raw dataset and verification scripts used to generate the evaluation metrics presented in the main paper.
 Benchmark Data Index
@@ -134,6 +139,7 @@ results/
     ├── table3_detection_quality.csv
     ├── table4_large_scale_detection.csv
     └── table5_hard_case_detection.csv
+
 📂 Repository Structure
 Plaintext
 EGA-V8/
@@ -148,9 +154,10 @@ EGA-V8/
 ├── README.md            # Repository documentation
 ├── LICENSE              # Open-source license file
 └── CITATION.cff         # Academic citation metadata
+
 📜 Citation
 If you utilize EGA V8 or its underlying architectural specifications in your academic research or system benchmarks, please cite our research paper:
-코드 스니펫
+
 @article{byun2026ega,
   title={Can Autonomous AI Execution Become Provable? EGA V8: A Five-Layer Execution Governance Architecture},
   author={Byun, Dae Jung},
