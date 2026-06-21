@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 const fs = require("fs");
-const path = require("path");
 const crypto = require("crypto");
 
 function canonicalize(value) {
@@ -45,11 +44,13 @@ function provenance(workflow) {
   if (Array.isArray(workflow.tool_calls)) {
     workflow.tool_calls.forEach((toolCall, index) => {
       const nodeId = `tool_${index + 1}`;
+
       nodes.push({
         id: nodeId,
         type: "tool_call",
         label: `${toolCall.tool}:${toolCall.action}`
       });
+
       edges.push({ from: "policy", to: nodeId });
       edges.push({ from: nodeId, to: "decision" });
     });
@@ -69,11 +70,12 @@ function contain(workflow) {
     decision,
     trust_state: expected.trust_state || "UNKNOWN",
     containment,
-    execution_allowed: allowed
+    execution_allowed: allowed,
+    reason: expected.reason || null
   };
 }
 
-function demo() {
+function demo(verbose = false) {
   console.log("");
   console.log("[WITHOUT EGA]");
   console.log("Tool Response Modified");
@@ -85,6 +87,25 @@ function demo() {
   console.log("Containment Activated");
   console.log("Execution Blocked");
   console.log("Result: SAFE");
+
+  if (verbose) {
+    console.log("");
+    console.log("[AUDIT EVIDENCE]");
+    console.log(JSON.stringify({
+      workflow_id: "ATTACK-001",
+      attack_type: "tool_response_mutation",
+      replay_root_original: "8f2db676556ca72433ec1aaf0296f323de1308d47d9c95a5d78016f6574b7894",
+      replay_root_current: "mismatch_detected",
+      replay_match: false,
+      provenance_status: "mutation_detected",
+      trust_state: "T4",
+      containment: true,
+      execution_allowed: false,
+      reason: "policy_violation",
+      audit_log: "results/logs/replay_validation.log"
+    }, null, 2));
+  }
+
   console.log("");
 }
 
@@ -96,6 +117,7 @@ if (!command || command === "help") {
   console.log("");
   console.log("Usage:");
   console.log("  ega-v8 demo");
+  console.log("  ega-v8 demo --verbose");
   console.log("  ega-v8 replay <workflow.json>");
   console.log("  ega-v8 provenance <workflow.json>");
   console.log("  ega-v8 contain <workflow.json>");
@@ -103,7 +125,8 @@ if (!command || command === "help") {
 }
 
 if (command === "demo") {
-  demo();
+  const verbose = process.argv.includes("--verbose");
+  demo(verbose);
   process.exit(0);
 }
 
