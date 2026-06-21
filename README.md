@@ -19,7 +19,7 @@ EGA V8 demonstrates three core governance capabilities:
 
 ## Install
 
-```bash
+```
 npm install ega-v8
 
 or
@@ -49,7 +49,7 @@ The same workflow should always generate the same replay root.
 
 ### Run
 
-```bash
+```
 npx ega-v8 replay examples/normal_workflow.json
 Expected Output
 {
