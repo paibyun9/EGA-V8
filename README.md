@@ -24,10 +24,12 @@ This artifact package accompanies the EGA V8 paper and enables independent verif
 
 ### Installation
 Install directly from **npm** to integrate into your environment:
-```bash
+
+```
 npm install ega-v8
 Run Without Installation
 You can spin up the interactive demonstration instantly using npx:
+
 Bash
 npx ega-v8 demo
 
