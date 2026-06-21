@@ -35,8 +35,10 @@ npx ega-v8 demo
 
 🚀 Quick Demo
 Experience the core difference between a standard un-governed runtime and the EGA v8 protected framework.
+
 Bash
 npx ega-v8 demo
+
 Expected Output
 Diff
 [WITHOUT EGA]
