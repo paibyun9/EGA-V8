@@ -58,6 +58,79 @@ results/
     └── table5_hard_case_detection.csv
 
 
+Quick Start
+Install
+npm install ega-v8
+
+Or run directly:
+
+npx ega-v8 demo
+Demonstration
+Basic Demo
+npx ega-v8 demo
+
+Expected Output:
+
+[WITHOUT EGA]
+Tool Response Modified
+Execution Continues
+Result: UNSAFE PROPAGATION
+
+[WITH EGA]
+Replay Mismatch Detected
+Containment Activated
+Execution Blocked
+Result: SAFE
+Verbose Audit Demo
+npx ega-v8 demo --verbose
+
+Displays replay mismatch evidence, containment status, trust state, and audit metadata.
+
+Replay Validation
+npx ega-v8 replay examples/normal_workflow.json
+
+Generates a deterministic replay root for workflow validation.
+
+Provenance Reconstruction
+npx ega-v8 provenance examples/normal_workflow.json
+
+Reconstructs workflow provenance graphs and execution traces.
+
+Containment Validation
+npx ega-v8 contain examples/mythos_like_attack.json
+
+Evaluates containment activation under replay mismatch conditions.
+
+Expected Output:
+
+{
+  "workflow_id": "ATTACK-001",
+  "decision": "BLOCK",
+  "trust_state": "T4",
+  "containment": true,
+  "execution_allowed": false,
+  "reason": "policy_violation"
+}
+Evaluation Results
+
+Evaluation artifacts are available in:
+
+results/tables/
+
+Included datasets:
+
+Table 2 — Replay Validation Results
+Table 3 — Detection Quality Results
+Table 4 — Large-Scale Detection Results
+Table 5 — Hard-Case Detection Results
+Reproducibility
+
+See:
+
+reproducibility/RUN_ALL_EVALUATIONS.md
+
+for evaluation and artifact reproduction instructions.
+
 ## Overview
 
 This directory contains all experimental outputs reported in the EGA V8 paper.
