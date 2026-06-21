@@ -172,14 +172,24 @@ EGA-V8/
 ├── LICENSE              # Open-source license file
 └── CITATION.cff         # Academic citation metadata
 
-📜 Citation
-If you utilize EGA V8 or its underlying architectural specifications in your academic research or system benchmarks, please cite our research paper:
-
-@article{byun2026ega,
-  title={Can Autonomous AI Execution Become Provable? EGA V8: A Five-Layer Execution Governance Architecture},
-  author={Byun, Dae Jung},
   journal={arXiv pre-print},
   year={2026}
 }
-📄 License
-This project is licensed under the MIT License - see the LICENSE file for details. Developed independently by Dae Jung Byun.
+
+## Collaboration & Feedback
+
+EGA V8 is released as an open artifact accompanying the EGA V8 research paper.
+
+We welcome feedback from AI developers, researchers, startup teams, and enterprise engineering organizations evaluating execution-governance mechanisms for autonomous AI systems.
+
+If you are exploring production deployment, research collaboration, benchmarking, or governance validation use cases, we would be interested in learning more about your experience.
+
+Contact: contact@lcm3.com
+
+Optional information when reaching out:
+
+Name
+Organization
+Email
+Intended use case
+Evaluation feedback
