@@ -1,0 +1,37 @@
+{
+  "workflow_id": "HC-001",
+  "workflow_type": "refund",
+
+  "user": {
+    "user_id": "user-777"
+  },
+
+  "input": {
+    "order_id": "ORD-999",
+    "refund_amount": 450
+  },
+
+  "policy": {
+    "policy_id": "refund_policy_v2",
+    "max_refund": 500
+  },
+
+  "tool_calls": [
+    {
+      "tool": "refund_api",
+      "action": "refund"
+    }
+  ],
+
+  "mutation": {
+    "type": "policy_override",
+    "attempted_refund_amount": 5000
+  },
+
+  "expected_result": {
+    "decision": "BLOCK",
+    "trust_state": "T4",
+    "containment": true,
+    "reason": "policy_violation"
+  }
+}
